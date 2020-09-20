@@ -18,48 +18,60 @@ export default {
     return {
       data: [
         {
-          text: "...un pays glacial...",
-          img: require("@/assets/img/jon-snow.webp")
+          text: "...pays du caribou...",
+          img: require("@/assets/img/caribou.gif"),
         },
         {
-          text: "...qui n'accueille pas tout le monde",
-          img: require("@/assets/img/canadian-border.gif")
+          text: "...où il n'est pas donné à tout le monde de poser ses valises !",
+          img: require("@/assets/img/canadian-border.gif"),
         },
         {
-          text: "",
-          img: require("@/assets/img/canadian-border.gif")
+          text: "Pour t'intégrer tu pourrais devenir un champion régional de kinball ?",
+          img: require("@/assets/img/kinball.gif"),
         },
         {
-          text: "",
-          img: require("@/assets/img/canadian-flag.gif")
+          text: "Ou te transformer en bûcheron éleveur de caribou ?",
+          img: require("@/assets/img/canadian-beard.webp"),
         },
         {
-          text: "",
-          img: require("@/assets/img/caribou.gif")
+          text: "Tu n'auras sûrement pas besoin de faire tant d'efforts...",
+          img: require("@/assets/img/canada-nice.gif"),
         },
         {
-          text: "",
-          img: require("@/assets/img/hockey.gif")
+          text: "... tu pourras déguster du sirop d'érable à la source...",
+          img: require("@/assets/img/mapply-syrup-cheers.gif"),
         },
         {
-          text: "",
-          img: require("@/assets/img/jon-snow.webp")
+          text: "... et te délecter de leurs meilleures poutines.",
+          img: require("@/assets/img/poutine.gif"),
         },
         {
-          text: "",
-          img: require("@/assets/img/mapply-syrup-cheers.gif")
+          text: "Même si ça ne remplacera pas l'indien !",
+          img: require("@/assets/img/indian.jpg"),
         },
         {
-          text: "",
-          img: require("@/assets/img/poutine.gif")
+          text: "Arthur espère que tu garderas l'esprit vif malgré les températures négatives...",
+          img: require("@/assets/img/jon-snow.webp"),
         },
         {
-          text: "",
-          img: require("@/assets/img/poutine-fries.webp")
-        }
+          text: "... et que tu sauras résoudre cette devinette.",
+          img: require("@/assets/img/devinette.png"),
+        },
+        {
+          text: 'Isabelle voulait te rappeler que si elle est "vieille", tu n\'es plus tout jeune non plus, alors...',
+          img: require("@/assets/img/old.webp"),
+        },
+        {
+          text: "...sois prudent !",
+          img: require("@/assets/img/fall.webp"),
+        },
+        {
+          text: "Je sais déjà mais, tu peux me répéter, à la louche, dans combien de temps tu reviens?",
+          img: require("@/assets/img/joke.jpg"),
+        },
       ],
       currentIndex: 0,
-      direction: "slideNext"
+      direction: "slideNext",
     };
   },
 
@@ -78,14 +90,14 @@ export default {
         this.direction = "slidePrev";
         this.currentIndex -= 1;
       }
-    }
+    },
   },
 
   computed: {
     current: function() {
       return this.data[Math.abs(this.currentIndex) % this.data.length];
-    }
-  }
+    },
+  },
 };
 </script>
 

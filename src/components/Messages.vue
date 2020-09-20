@@ -63,64 +63,63 @@ import Contributions from "./Contributions.vue";
 export default {
   name: "Messages",
   components: {
-    Contributions
+    Contributions,
   },
   data() {
     return {
       messages: [
         {
           id: 0,
-          name: "Isabelle ",
-          text: ""
+          name: "Arthur",
+          text: "Je savais que tu était pas la pour être ici. Bonne continuation et plein de réussites (ie. putes & bagnoles).",
         },
         {
           id: 1,
-          name: "Thomas",
-          text: ""
+          name: "Malik",
+          text: "L'héritage du PingMyBoss que tu nous as laissé représente pour nous la clé de la réussite !",
         },
         {
           id: 2,
-          name: "Marine",
-          text: ""
+          name: "Audrey F.",
+          text:
+            "Quelques mois de décalage mais ton beau projet va enfin aboutir. Je suis vraiment contente pour toi. Les projets de messagerie doivent te paraître loin déjà (comme pour moi 😉). Profites bien de cette nouvelle aventure perso et pro. Bises.",
         },
         {
           id: 3,
-          name: "Joseph",
-          text: ""
+          name: "Thomas",
+          text:
+            "Bon départ au pays où la poutine coule à flot. Tu as oublié de léguer ton appli la plus importante : le pingeur automatique de Phillipe ! Je continuerai à coder avec le cul pour perpétuer la tradition.",
         },
         {
           id: 4,
-          name: "Malik",
-          text: ""
+          name: "Audrey D.",
+          text:
+            "Je te souhaite un bon départ au pays des caribou ! Tu vas bien te cailler mais ce sera un super dépaysement.  Amuse toi bien dans ton nouveau job et fais pleins de belles rencontres !",
         },
         {
           id: 5,
-          name: "Frédéric",
-          text: ""
+          name: "Marine",
+          text: "Bonne continuation Victor et n’oublie pas ta doudoune!",
         },
         {
           id: 6,
-          name: "Annette",
-          text: ""
-        },
-        {
-          id: 7,
-          name: "Loïc",
-          text: ""
-        },
-        {
-          id: 7,
           name: "Léonore",
-          text: ""
-        }
-      ]
+          text:
+            "C'était cool de travailler avec toi ! Je te souhaite de belles rencontres, des nouveaux projets passionnants et de ne pas glisser sur une plaque de verglas en sortant de chez toi... Eclate-toi bien dans cette nouvelle aventure !",
+        },
+        {
+          id: 7,
+          name: "Isabelle, Fred, Joseph, Annette et Loïc",
+          text: "Bonne continuation Victor !",
+        },
+      ],
     };
   },
   methods: {
     endOfMessages() {
       this.$emit("endOfMessages", true);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -132,14 +131,12 @@ export default {
   background: #750606;
   border-radius: 0.3125rem;
   padding: 1.875rem 0;
-  box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.16),
-    0 0.1875rem 0.375rem rgba(0, 0, 0, 0.23);
+  box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.16), 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.23);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .message:hover {
-  box-shadow: 0 0.875rem 1.75rem rgba(0, 0, 0, 0.25),
-    0 0.625rem 0.625rem rgba(0, 0, 0, 0.22);
+  box-shadow: 0 0.875rem 1.75rem rgba(0, 0, 0, 0.25), 0 0.625rem 0.625rem rgba(0, 0, 0, 0.22);
 }
 
 .text {
@@ -191,8 +188,7 @@ svg.bottom {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .return a:hover {
-  box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.16),
-    0 0.1875rem 0.375rem rgba(0, 0, 0, 0.23);
+  box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.16), 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.23);
 }
 
 @media screen and (max-width: 50rem) {
