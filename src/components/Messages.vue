@@ -109,7 +109,12 @@ export default {
         },
         {
           id: 7,
-          name: "Isabelle, Fred, Joseph, Annette et Loïc",
+          name: "Joseph",
+          text: "Je te souhaites des bonnes parties de tennis clavier et de bonnes séances de gainage après les poutines!!! Et surtout \"RENTRES CHEZ TOI!!!!\". Nota fais pas comme moi qui ai écrasé un raton laveur le premier soir.",
+        },
+        {
+          id: 8,
+          name: "Isabelle, Fred, Annette et Loïc",
           text: "Bonne continuation Victor !",
         },
       ],
